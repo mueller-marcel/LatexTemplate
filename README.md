@@ -14,4 +14,4 @@ This is a template for academic papers written in latex.
 
 # Annotations
 * Please be aware that the template is configured with the german standard. You must adjust this to your language if necessary
-* You can choose between a title page only for universities or a title page configured for a papers in cooperation with companies
+* You can choose between a title page only for universities or a title page configured for papers in cooperation with companies
