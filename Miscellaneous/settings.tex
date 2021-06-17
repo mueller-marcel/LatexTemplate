@@ -1,0 +1,80 @@
+% Packages
+\usepackage[left=3cm,right=3cm, bottom=4 cm]{geometry}
+\usepackage[onehalfspacing]{setspace}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx, subfig}
+\usepackage[headsepline]{scrlayer-scrpage}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage[printonlyused]{acronym}
+\usepackage{csquotes}
+\usepackage{listings}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{array}
+\usepackage{textcomp}
+\usepackage{tikz}
+\usepackage{inconsolata}
+\usepackage[style=apa]{biblatex}
+\usepackage{hyperref}
+
+% Configure the distance between the entries in the bibliography
+\setlength{\bibitemsep}{0.5\baselineskip}
+
+% Definition of colors for the syntax highlighting in code listings
+\definecolor{bluekeywords}{rgb}{0,0,1}
+\definecolor{greencomments}{rgb}{0,0.5,0}
+\definecolor{redstrings}{rgb}{0.64,0.08,0.08}
+\definecolor{xmlcomments}{rgb}{0.5,0.5,0.5}
+\definecolor{types}{rgb}{0.17,0.57,0.68}
+\definecolor{grey}{rgb}{150,150,150}
+
+% Configuration of code listings
+\lstset{language=[Sharp]C,
+captionpos=b,
+numbers=left,
+frame=single,
+showspaces=false,
+showtabs=false,
+breaklines=true,
+showstringspaces=false,
+breakatwhitespace=true,
+escapeinside={(*@}{@*)},
+commentstyle=\color{greencomments},
+morekeywords={
+    partial, 
+    var, 
+    value, 
+    get, 
+    set,
+    await},
+keywordstyle=\color{bluekeywords},
+stringstyle=\color{redstrings},
+basicstyle=\ttfamily\small,
+emph=[1]{},
+emphstyle=[1]{\color{types}}
+}
+
+% Configuration of the code index
+\renewcommand{\lstlistingname}{Code}
+\renewcommand{\lstlistlistingname}{Codeverzeichnis}
+
+
+% Configuration of the headline
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+\ohead{\pagemark}
+\ihead{\headmark}
+\automark[section]{chapter}
+
+% Configuration of the quotes (german presentation)
+\MakeOuterQuote{"}
+
+% Suppress indentation on new paragraphs
+\setlength{\parindent}{0em}
+
+% Include biblipgraphy
+\addbibresource{bibliography.bib}

@@ -1,0 +1,30 @@
+% Document class
+\documentclass[a4paper,12pt,listof=totoc,listof=flat]{scrreprt}
+
+% Declare counter for the pages
+\newcounter{savepage}
+
+% Include settings
+\include{Miscellaneous/settings}
+
+\begin{document}
+
+% Include title page
+\include{Miscellaneous/title}
+
+% Set enumeration to roman and include indexes
+\pagenumbering{Roman}
+\include{Miscellaneous/indexes}
+
+% Set enumeration to arabic and include the chapters 
+\setcounter{savepage}{\arabic{page}}
+\pagenumbering{arabic}
+\include{Chapters/01_introduction}
+
+% Include the bibliography
+\pagenumbering{Roman}
+\setcounter{page}{\thesavepage}
+\printbibliography[title=Literaturverzeichnis]
+\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+
+\end{document}
