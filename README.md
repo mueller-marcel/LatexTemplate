@@ -12,5 +12,6 @@ This is a template for academic papers written in latex.
 * `Chapters`: Contains `.tex`-files for the each chapter. The Chapter files can be includes in the `main.tex`
 * `Images`: Contains images of the paper
 
-# Annotation
-Please be aware that the template is configured with the german standard. You must adjust this to your language if necessary
+# Annotations
+* Please be aware that the template is configured with the german standard. You must adjust this to your language if necessary
+* You can choose between a title page only for universities or a title page configured for a papers in cooperation with companies
